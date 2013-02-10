@@ -255,6 +255,8 @@ The methods for outputting images are as follows:
 
 
 DETECTING FILE FORMATS
+------------
+
 
 There are some additional methods for detecting the image file format from 
 filenames, mimetypes or data:
