@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14429ED70C50B99F00D6C3B5 /* GDFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 14429ED60C50B99F00D6C3B5 /* GDFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14429EFE0C50BA5C00D6C3B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
+		14429F370C50BD3F00D6C3B5 /* GDImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 14429F350C50BD3F00D6C3B5 /* GDImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14429F380C50BD3F00D6C3B5 /* GDImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 14429F360C50BD3F00D6C3B5 /* GDImage.m */; };
+		1442A0140C50D12E00D6C3B5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1442A0130C50D12E00D6C3B5 /* libz.dylib */; };
+		6E5829230C520C9200BACB3C /* libgd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5829200C520C9200BACB3C /* libgd.a */; };
+		6E5829240C520C9200BACB3C /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5829210C520C9200BACB3C /* libjpeg.a */; };
+		6E5829250C520C9200BACB3C /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5829220C520C9200BACB3C /* libpng.a */; };
+		6E582A940C5223B600BACB3C /* GDTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E582A930C5223B600BACB3C /* GDTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E7E92790F68432B008469A9 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E92780F68432B008469A9 /* AppKit.framework */; };
+		6E7E929F0F6843FC008469A9 /* GDFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* GDFramework.framework */; };
+		6E7E92A10F68440C008469A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14429ED00C50B95300D6C3B5 /* main.m */; };
+		6EE31E020C5369EF00E5F6AE /* GDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE31E000C5369EF00E5F6AE /* GDColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EE31E030C5369EF00E5F6AE /* GDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE31E010C5369EF00E5F6AE /* GDColor.m */; };
+		6EE31F250C53837400E5F6AE /* GDImage+Cocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE31F230C53837400E5F6AE /* GDImage+Cocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EE31F260C53837400E5F6AE /* GDImage+Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE31F240C53837400E5F6AE /* GDImage+Cocoa.m */; };
+		6EE322120C53A2BC00E5F6AE /* GDFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE322100C53A2BC00E5F6AE /* GDFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EE322130C53A2BC00E5F6AE /* GDFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE322110C53A2BC00E5F6AE /* GDFont.m */; };
+		6EE322690C53A5B300E5F6AE /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE322680C53A5B300E5F6AE /* libfreetype.a */; };
+		6EE322760C53A65F00E5F6AE /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE322750C53A65F00E5F6AE /* libiconv.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E7E929D0F6843F7008469A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216 /* GDFramework */;
+			remoteInfo = GDFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		14429ED00C50B95300D6C3B5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14429ED60C50B99F00D6C3B5 /* GDFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFramework.h; sourceTree = "<group>"; };
+		14429F350C50BD3F00D6C3B5 /* GDImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDImage.h; sourceTree = "<group>"; };
+		14429F360C50BD3F00D6C3B5 /* GDImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDImage.m; sourceTree = "<group>"; };
+		1442A0130C50D12E00D6C3B5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = "<absolute>"; };
+		6E5829200C520C9200BACB3C /* libgd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgd.a; path = lib/libgd.a; sourceTree = "<group>"; };
+		6E5829210C520C9200BACB3C /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = lib/libjpeg.a; sourceTree = "<group>"; };
+		6E5829220C520C9200BACB3C /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = lib/libpng.a; sourceTree = "<group>"; };
+		6E582A930C5223B600BACB3C /* GDTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTypes.h; sourceTree = "<group>"; };
+		6E582AF50C522C7100BACB3C /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		6E582B0D0C522D6700BACB3C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6E582B180C5231CA00BACB3C /* max.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = max.jpg; sourceTree = "<group>"; };
+		6E7E92780F68432B008469A9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		6E7E92990F6843F2008469A9 /* GDFrameworkTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GDFrameworkTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE31E000C5369EF00E5F6AE /* GDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDColor.h; sourceTree = "<group>"; };
+		6EE31E010C5369EF00E5F6AE /* GDColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDColor.m; sourceTree = "<group>"; };
+		6EE31F230C53837400E5F6AE /* GDImage+Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDImage+Cocoa.h"; sourceTree = "<group>"; };
+		6EE31F240C53837400E5F6AE /* GDImage+Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GDImage+Cocoa.m"; sourceTree = "<group>"; };
+		6EE321030C538C4E00E5F6AE /* max.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = max.bmp; sourceTree = "<group>"; };
+		6EE322100C53A2BC00E5F6AE /* GDFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFont.h; sourceTree = "<group>"; };
+		6EE322110C53A2BC00E5F6AE /* GDFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFont.m; sourceTree = "<group>"; };
+		6EE322680C53A5B300E5F6AE /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = lib/libfreetype.a; sourceTree = "<group>"; };
+		6EE322750C53A65F00E5F6AE /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = /usr/lib/libiconv.dylib; sourceTree = "<absolute>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = resources/Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* GDFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GDFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E7E92970F6843F2008469A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7E929F0F6843FC008469A9 /* GDFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14429EFE0C50BA5C00D6C3B5 /* Foundation.framework in Frameworks */,
+				1442A0140C50D12E00D6C3B5 /* libz.dylib in Frameworks */,
+				6E5829230C520C9200BACB3C /* libgd.a in Frameworks */,
+				6E5829240C520C9200BACB3C /* libjpeg.a in Frameworks */,
+				6E5829250C520C9200BACB3C /* libpng.a in Frameworks */,
+				6EE322690C53A5B300E5F6AE /* libfreetype.a in Frameworks */,
+				6EE322760C53A65F00E5F6AE /* libiconv.dylib in Frameworks */,
+				6E7E92790F68432B008469A9 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* GDFramework.framework */,
+				6E7E92990F6843F2008469A9 /* GDFrameworkTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* GDFramework */ = {
+			isa = PBXGroup;
+			children = (
+				6E582B0D0C522D6700BACB3C /* LICENSE */,
+				14429FA00C50C2A900D6C3B5 /* doc */,
+				089C1665FE841158C02AAC07 /* resources */,
+				14429EC80C50B89F00D6C3B5 /* src */,
+				14429ECC0C50B8A900D6C3B5 /* example */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = GDFramework;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E92780F68432B008469A9 /* AppKit.framework */,
+				6EE322680C53A5B300E5F6AE /* libfreetype.a */,
+				6E5829200C520C9200BACB3C /* libgd.a */,
+				6E5829210C520C9200BACB3C /* libjpeg.a */,
+				6E5829220C520C9200BACB3C /* libpng.a */,
+				1442A0130C50D12E00D6C3B5 /* libz.dylib */,
+				6EE322750C53A65F00E5F6AE /* libiconv.dylib */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		14429EC80C50B89F00D6C3B5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				14429ED60C50B99F00D6C3B5 /* GDFramework.h */,
+				14429F350C50BD3F00D6C3B5 /* GDImage.h */,
+				14429F360C50BD3F00D6C3B5 /* GDImage.m */,
+				6E582A930C5223B600BACB3C /* GDTypes.h */,
+				6EE31E000C5369EF00E5F6AE /* GDColor.h */,
+				6EE31E010C5369EF00E5F6AE /* GDColor.m */,
+				6EE322100C53A2BC00E5F6AE /* GDFont.h */,
+				6EE322110C53A2BC00E5F6AE /* GDFont.m */,
+				6EE31F230C53837400E5F6AE /* GDImage+Cocoa.h */,
+				6EE31F240C53837400E5F6AE /* GDImage+Cocoa.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		14429ECC0C50B8A900D6C3B5 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				6EE321030C538C4E00E5F6AE /* max.bmp */,
+				6E582B180C5231CA00BACB3C /* max.jpg */,
+				14429ED00C50B95300D6C3B5 /* main.m */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		14429FA00C50C2A900D6C3B5 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				6E582AF50C522C7100BACB3C /* readme.txt */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14429ED70C50B99F00D6C3B5 /* GDFramework.h in Headers */,
+				14429F370C50BD3F00D6C3B5 /* GDImage.h in Headers */,
+				6E582A940C5223B600BACB3C /* GDTypes.h in Headers */,
+				6EE31E020C5369EF00E5F6AE /* GDColor.h in Headers */,
+				6EE31F250C53837400E5F6AE /* GDImage+Cocoa.h in Headers */,
+				6EE322120C53A2BC00E5F6AE /* GDFont.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6E7E92980F6843F2008469A9 /* GDFrameworkTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7E92A50F68442A008469A9 /* Build configuration list for PBXNativeTarget "GDFrameworkTest" */;
+			buildPhases = (
+				6E7E92960F6843F2008469A9 /* Sources */,
+				6E7E92970F6843F2008469A9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E7E929E0F6843F7008469A9 /* PBXTargetDependency */,
+			);
+			name = GDFrameworkTest;
+			productName = GDFrameworkTest;
+			productReference = 6E7E92990F6843F2008469A9 /* GDFrameworkTest */;
+			productType = "com.apple.product-type.tool";
+		};
+		8DC2EF4F0486A6940098B216 /* GDFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "GDFramework" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GDFramework;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = GDFramework;
+			productReference = 8DC2EF5B0486A6940098B216 /* GDFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "GDFramework" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* GDFramework */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* GDFramework */,
+				6E7E92980F6843F2008469A9 /* GDFrameworkTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E7E92960F6843F2008469A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7E92A10F68440C008469A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14429F380C50BD3F00D6C3B5 /* GDImage.m in Sources */,
+				6EE31E030C5369EF00E5F6AE /* GDColor.m in Sources */,
+				6EE31F260C53837400E5F6AE /* GDImage+Cocoa.m in Sources */,
+				6EE322130C53A2BC00E5F6AE /* GDFont.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E7E929E0F6843F7008469A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* GDFramework */;
+			targetProxy = 6E7E929D0F6843F7008469A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				INFOPLIST_FILE = resources/Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_3)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/lib\"";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRODUCT_NAME = GDFramework;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				INFOPLIST_FILE = resources/Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_3)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/lib\"";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRODUCT_NAME = GDFramework;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = include;
+				OTHER_LDFLAGS = "-single_module";
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = include;
+				OTHER_LDFLAGS = "-single_module";
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+		6E7E929B0F6843F2008469A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GDFrameworkTest;
+			};
+			name = Debug;
+		};
+		6E7E929C0F6843F2008469A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GDFrameworkTest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "GDFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "GDFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7E92A50F68442A008469A9 /* Build configuration list for PBXNativeTarget "GDFrameworkTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7E929B0F6843F2008469A9 /* Debug */,
+				6E7E929C0F6843F2008469A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

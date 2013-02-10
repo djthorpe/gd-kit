@@ -1,0 +1,40 @@
+8
+
+dir
+5
+https://gd-kit.googlecode.com/svn/trunk/include/libpng12
+https://gd-kit.googlecode.com/svn
+
+
+
+2009-03-11T19:00:58.431534Z
+3
+david.thorpe
+
+
+svn:special svn:externals svn:needs-lock
+
+pngconf.h
+file
+
+
+
+
+2007-07-21T09:34:34.000000Z
+0e27cff022220fe84b6b91c19f7e2163
+2009-03-11T19:00:58.431534Z
+3
+david.thorpe
+
+png.h
+file
+
+
+
+
+2007-07-21T09:34:34.000000Z
+a4d1fb04ef851cab3f38529b99466b72
+2009-03-11T19:00:58.431534Z
+3
+david.thorpe
+
