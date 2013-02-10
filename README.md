@@ -33,42 +33,55 @@ framework. The basis of the framework is "GDImage", which represents a single
 bitmapped image. Include the GDFramework by adding frameworks to your XCode
 project, and in your source you can use the following import statement:
 
+```objc
 #import <GDFramework/GDFramework.h>
+```
 
 You can create a GDImage from an NSData object or from a file:
 
+```objc
   GDImage* theImage = [[GDImage alloc] initWithFile:thePath];
   
   GDImage* theImage = [[GDImage alloc] initWithData:theData];
-  
+```
+
 These will try to auto-detect the type of image from the contents. They will
 return 'nil' if the image cannot be autodetected, or the format is not supported.
 You can also create an empty image into which you can draw:
 
+```objc
   GDImage* theImage = [[GDImage alloc] initWithSize:theSize];
-
+```
 
 RESIZING AND CROPPING
 ------------
 
 
+```objc
 -(GDImage* )imageResizedTo:(NSSize)theSize resampled:(BOOL)isResampled;
+```
 
   This method will return a new image of the exact new size. Either straight
   'pixel copy' is performed or resampling of the image can be done to create
   slightly smoother versions.
 
+```objc
 -(GDImage* )imageConstrainedToMaxSize:(NSSize)theSize resampled:(BOOL)isResampled;
+```
 
   This method will resize the image, maintaining image aspect ratios. The size will
   be no larger than the size provided.
 
+```objc
 -(GDImage* )imageConstrainedToMinSize:(NSSize)theSize resampled:(BOOL)isResampled;
+```
 
   This method will resize the image, maintaining image aspect ratios. The size will
   be no smaller than the size provided.
 
+```objc
 -(GDImage* )imageConstrainedToSize:(NSSize)theSize resampled:(BOOL)isResampled cropped:(int)flags;
+```
 
   This method will resize the image, maintaining image aspect ratios. Cropping will
   be performed on the image to ensure it fits exactly to the correct dimensions. You can
@@ -89,17 +102,23 @@ COLOUR
 
 To retrieve colour from an image use the following methods:
 
+```objc
 -(GDColor* )colorForPoint:(NSPoint)thePoint;
+```
 
   This will return a colour value from a point in the image, where the point
   uses Quartz conventions (the bottom-left of the image is the origin)
 
+```objc
 -(GDColor* )colorForRed:(float)theRed green:(float)theGreen blue:(float)theBlue;
+```
 
   This will return a colour value from red, green and blue components, where the
   components are between 0.0 and 1.0, as per Quartz conventions.
   
+```objc
 -(GDColor* )colorForRed:(float)theRed green:(float)theGreen blue:(float)theBlue alpha:(float)theAlpha;
+```
 
   This will return a colour value from red, green, blue and alpha components,
   where the components are between 0.0 and 1.0, as per Quartz conventions. For
@@ -115,6 +134,7 @@ DRAWING
 You can draw outlines and filled rectangles, and place images into others using
 the following methods:
 
+```objc
   -(void)drawRectFill:(NSRect)theRect withColor:(GDColor* )theColor;
 
   -(void)drawRectOutline:(NSRect)theRect withColor:(GDColor* )theColor;
@@ -122,6 +142,7 @@ the following methods:
   -(void)drawLineFrom:(NSPoint)theSource to:(NSPoint)theDest withColor:(GDColor* )theColor;
 
   -(void)drawImage:(GDImage* )theImage intoRect:(NSRect)theRect;
+```
 
 Again, these follow Quartz conventions with the origin at the bottom left of the
 image.
@@ -133,7 +154,9 @@ FILTERING
 
 There is only one filter in the GD graphics library for sharpening:
 
+```objc
   -(void)filterSharpenBy:(float)theAmount;
+```
 
 The amount should be between 0.0 and 1.0, although I believe it's possible
 to go higher.
@@ -146,6 +169,7 @@ FONTS
 You can render in-built system fonts or TrueType fonts into your images. To
 create a font object, use one of the following methods:
 
+```objc
   +(GDFont* )trueTypeFontAtPath:(NSString* )thePath points:(float)points;
 
   +(GDFont* )tinySystemFont;
@@ -157,19 +181,24 @@ create a font object, use one of the following methods:
   +(GDFont* )giantSystemFont;
 
   +(GDFont* )mediumBoldSystemFont;
+```
 
 You can obtain the em width or height (the width or height of the 'm' letter),
 or the size that an NSString may take:
 
+```objc
   -(float)emWidth;
 
   -(float)emHeight;
 
   -(NSSize)sizeOfString:(NSString* )theString;
+```
 
 To draw a string in an image, use the following GDImage method:
 
+```objc
   -(void)drawString:(NSString* )theString point:(NSPoint)thePoint font:(GDFont* )theFont color:(GDColor* )theColor;
+```
 
 Here, I think the point is the top left point of the string, rather than the
 bottom left. This may not exactly follow the Quartz conventions.
@@ -190,27 +219,37 @@ following GDImageType constants when using these methods:
 
 The methods for outputting images are as follows:
 
+```objc
 -(BOOL)writeToFile:(NSString* )thePath type:(GDImageType)theImageType;
+```
 
   This will write the GDImage to a file. Will return YES on success. The
   file will be overwritten if it already exists.  
 
+```objc
 -(BOOL)writeToFile:(NSString* )thePath type:(GDImageType)theImageType quality:(float)theQuality;
+```
 
   As above, but will allow you to set quality of output for JPEG files. The
   quality parameter should be between 0.0 and 1.0.
 
+```objc
 -(NSData* )dataForType:(GDImageType)theImageType;
+```
 
   This will return an NSData object which contains the bitmap image. Will
   return nil on failure.
 
+```objc
 -(NSData* )dataForType:(GDImageType)theImageType quality:(float)theQuality;
+```
 
   As above, but will allow you to set quality of output for JPEG files. The
   quality parameter should be between 0.0 and 1.0.
 
+```objc
 -(NSImage* )NSImage
+```
 
   Will return an NSImage for the GDImage.
 
@@ -220,6 +259,7 @@ DETECTING FILE FORMATS
 There are some additional methods for detecting the image file format from 
 filenames, mimetypes or data:
 
+```objc
   +(GDImageType)typeForFilename:(NSString* )thePath;
 
   +(GDImageType)typeForMimetype:(NSString* )theMimetype;
@@ -227,14 +267,17 @@ filenames, mimetypes or data:
   +(GDImageType)typeForData:(NSData* )theData;  
 
   +(GDImageType)typeForFile:(NSString* )thePath;
+```
 
 These will return a GDImageType of one of the following types:
 
+```objc
   GDImageTypeGIF
   GDImageTypeJPEG
   GDImageTypePNG
   GDImageTypeBMP
   GDImageTypeTIFF
+```
 
 If the format could not be detected, the constant GDImageTypeUnknown is
 returned. Note that reading and writing TIFF and BMP image file formats are not
