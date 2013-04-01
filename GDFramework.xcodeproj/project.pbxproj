@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		140CAB75170997E80049A865 /* libgd */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 140CAB77170997E80049A865 /* Build configuration list for PBXAggregateTarget "libgd" */;
+			buildPhases = (
+				140CAB76170997E80049A865 /* ShellScript */,
+			);
+			dependencies = (
+				140CAB7F170997FE0049A865 /* PBXTargetDependency */,
+				140CAB7D170997FB0049A865 /* PBXTargetDependency */,
+				140CAB7B170997F70049A865 /* PBXTargetDependency */,
+			);
+			name = libgd;
+			productName = libjpeg;
+		};
 		1437EA9417089A11001D41DF /* libjpeg */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 1437EA9517089A11001D41DF /* Build configuration list for PBXAggregateTarget "libjpeg" */;
@@ -40,22 +54,10 @@
 			name = freetype;
 			productName = libjpeg;
 		};
-		1437EAAB17089D45001D41DF /* Build Support Libraries */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 1437EAAC17089D45001D41DF /* Build configuration list for PBXAggregateTarget "Build Support Libraries" */;
-			buildPhases = (
-			);
-			dependencies = (
-				1437EAB017089D4D001D41DF /* PBXTargetDependency */,
-				1437EAB217089D4E001D41DF /* PBXTargetDependency */,
-				1437EAB417089D50001D41DF /* PBXTargetDependency */,
-			);
-			name = "Build Support Libraries";
-			productName = "Build Support Libraries";
-		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		140CAB86170999FA0049A865 /* GDImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 14429F360C50BD3F00D6C3B5 /* GDImage.m */; };
 		1437EABB1708A20D001D41DF /* GDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE31E010C5369EF00E5F6AE /* GDColor.m */; };
 		14429ED70C50B99F00D6C3B5 /* GDFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 14429ED60C50B99F00D6C3B5 /* GDFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14429EFE0C50BA5C00D6C3B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
@@ -65,33 +67,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1437EAAF17089D4D001D41DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1437EA9417089A11001D41DF;
-			remoteInfo = libjpeg;
-		};
-		1437EAB117089D4E001D41DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1437EAA117089BA7001D41DF;
-			remoteInfo = libpng;
-		};
-		1437EAB317089D50001D41DF /* PBXContainerItemProxy */ = {
+		140CAB7A170997F70049A865 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1437EAA617089C84001D41DF;
 			remoteInfo = freetype;
 		};
-		1437EAB517089D6A001D41DF /* PBXContainerItemProxy */ = {
+		140CAB7C170997FB0049A865 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1437EAAB17089D45001D41DF;
-			remoteInfo = "Build Support Libraries";
+			remoteGlobalIDString = 1437EA9417089A11001D41DF;
+			remoteInfo = libjpeg;
+		};
+		140CAB7E170997FE0049A865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1437EAA117089BA7001D41DF;
+			remoteInfo = libpng;
+		};
+		140CAB83170998A60049A865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 140CAB75170997E80049A865;
+			remoteInfo = libgd;
 		};
 		6E7E929D0F6843F7008469A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -104,6 +106,8 @@
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		140CAB80170998210049A865 /* gd-2.0.35.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "gd-2.0.35.tar.gz"; sourceTree = "<group>"; };
+		140CAB85170999560049A865 /* make-gd.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "make-gd.sh"; sourceTree = "<group>"; };
 		1437EA9A17089AE9001D41DF /* make-freetype.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "make-freetype.sh"; sourceTree = "<group>"; };
 		1437EA9B17089AE9001D41DF /* make-libjpeg.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "make-libjpeg.sh"; sourceTree = "<group>"; };
 		1437EA9C17089AE9001D41DF /* make-libpng.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "make-libpng.sh"; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 		1437EA9917089AE9001D41DF /* etc */ = {
 			isa = PBXGroup;
 			children = (
+				140CAB85170999560049A865 /* make-gd.sh */,
 				1437EA9A17089AE9001D41DF /* make-freetype.sh */,
 				1437EA9B17089AE9001D41DF /* make-libjpeg.sh */,
 				1437EA9C17089AE9001D41DF /* make-libpng.sh */,
@@ -209,6 +214,7 @@
 		1437EA9D17089AE9001D41DF /* tar */ = {
 			isa = PBXGroup;
 			children = (
+				140CAB80170998210049A865 /* gd-2.0.35.tar.gz */,
 				1437EA9E17089AE9001D41DF /* freetype-2.4.11.tar.gz */,
 				1437EA9F17089AE9001D41DF /* jpegsrc.v9.tar.gz */,
 				1437EAA017089AE9001D41DF /* libpng-1.5.14.tar.gz */,
@@ -295,7 +301,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1437EAB617089D6A001D41DF /* PBXTargetDependency */,
+				140CAB84170998A60049A865 /* PBXTargetDependency */,
 			);
 			name = GDFramework;
 			productInstallPath = "$(HOME)/Library/Frameworks";
@@ -326,7 +332,7 @@
 				1437EA9417089A11001D41DF /* libjpeg */,
 				1437EAA117089BA7001D41DF /* libpng */,
 				1437EAA617089C84001D41DF /* freetype */,
-				1437EAAB17089D45001D41DF /* Build Support Libraries */,
+				140CAB75170997E80049A865 /* libgd */,
 				8DC2EF4F0486A6940098B216 /* GDFramework */,
 				6E7E92980F6843F2008469A9 /* GDFrameworkTest */,
 			);
@@ -344,6 +350,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		140CAB76170997E80049A865 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/tar/gd-2.0.35.tar.gz",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nif [ \"${SCRIPT_INPUT_FILE_COUNT}\" != \"1\" ] ; then\n    echo \"Invalid number of input files\"\n    exit 1\nfi\n\nif [ ! -f ${SCRIPT_INPUT_FILE_0} ] ; then\n    echo \"Missing input file\"\n    exit 1\nfi\n\necho \"Making ${SCRIPT_INPUT_FILE_0}\"\necho \"Output to ${BUILT_PRODUCTS_DIR}\"\n\nif [ ! -d ${BUILT_PRODUCTS_DIR} ]\nthen\n    mkdir -pv ${BUILT_PRODUCTS_DIR}\nfi\n\n/bin/bash ${SRCROOT}/etc/make-gd.sh ${SCRIPT_INPUT_FILE_0} ${BUILT_PRODUCTS_DIR}\n\n";
+		};
 		1437EA9817089A19001D41DF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,12 +415,13 @@
 				"${BUILT_PRODUCTS_DIR}/freetype-current",
 				"${BUILT_PRODUCTS_DIR}/libjpeg-current",
 				"${BUILT_PRODUCTS_DIR}/libpng-current",
+				"${BUILT_PRODUCTS_DIR}/gd-current",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\nBUILD=${BUILT_PRODUCTS_DIR}\nDESTINATION=${BUILD}/${CONTENTS_FOLDER_PATH}/Resources\n\nfor (( FILE_COUNT=0 ; $FILE_COUNT < $SCRIPT_INPUT_FILE_COUNT ; FILE_COUNT++ ))\ndo\n    SOURCE=$(declare -p SCRIPT_INPUT_FILE_$FILE_COUNT | awk -F \"=\" '{print $2}' | sed -e 's/\"$//' -e 's/^\"//')\n    PACKAGE=`basename ${SOURCE}`\n\n    echo Installing ${DESTINATION}/${PACKAGE}\n\n    # copy lib directory\n    install -d ${DESTINATION}/${PACKAGE}/lib\n    cp -r ${SOURCE}/lib ${DESTINATION}/${PACKAGE}\n\ndone\n\n";
+			shellScript = "\nBUILD=${BUILT_PRODUCTS_DIR}\nDESTINATION=${BUILD}/${CONTENTS_FOLDER_PATH}/Resources\n\nfor (( FILE_COUNT=0 ; $FILE_COUNT < $SCRIPT_INPUT_FILE_COUNT ; FILE_COUNT++ ))\ndo\n    SOURCE=$(declare -p SCRIPT_INPUT_FILE_$FILE_COUNT | awk -F \"=\" '{print $2}' | sed -e 's/\"$//' -e 's/^\"//')\n    PACKAGE=`basename ${SOURCE}`\n\n    echo Installing ${DESTINATION}/${PACKAGE}\n\n    # copy lib directory\n    install -d ${DESTINATION}/lib\n    cp -r ${SOURCE}/lib ${DESTINATION}\n\ndone\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -418,31 +439,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				1437EABB1708A20D001D41DF /* GDColor.m in Sources */,
+				140CAB86170999FA0049A865 /* GDImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1437EAB017089D4D001D41DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1437EA9417089A11001D41DF /* libjpeg */;
-			targetProxy = 1437EAAF17089D4D001D41DF /* PBXContainerItemProxy */;
-		};
-		1437EAB217089D4E001D41DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1437EAA117089BA7001D41DF /* libpng */;
-			targetProxy = 1437EAB117089D4E001D41DF /* PBXContainerItemProxy */;
-		};
-		1437EAB417089D50001D41DF /* PBXTargetDependency */ = {
+		140CAB7B170997F70049A865 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1437EAA617089C84001D41DF /* freetype */;
-			targetProxy = 1437EAB317089D50001D41DF /* PBXContainerItemProxy */;
+			targetProxy = 140CAB7A170997F70049A865 /* PBXContainerItemProxy */;
 		};
-		1437EAB617089D6A001D41DF /* PBXTargetDependency */ = {
+		140CAB7D170997FB0049A865 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1437EAAB17089D45001D41DF /* Build Support Libraries */;
-			targetProxy = 1437EAB517089D6A001D41DF /* PBXContainerItemProxy */;
+			target = 1437EA9417089A11001D41DF /* libjpeg */;
+			targetProxy = 140CAB7C170997FB0049A865 /* PBXContainerItemProxy */;
+		};
+		140CAB7F170997FE0049A865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1437EAA117089BA7001D41DF /* libpng */;
+			targetProxy = 140CAB7E170997FE0049A865 /* PBXContainerItemProxy */;
+		};
+		140CAB84170998A60049A865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 140CAB75170997E80049A865 /* libgd */;
+			targetProxy = 140CAB83170998A60049A865 /* PBXContainerItemProxy */;
 		};
 		6E7E929E0F6843F7008469A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -452,6 +474,26 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		140CAB78170997E80049A865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "libjpeg copy";
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		140CAB79170997E80049A865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "libjpeg copy";
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
 		1437EA9617089A11001D41DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -512,49 +554,20 @@
 			};
 			name = Release;
 		};
-		1437EAAD17089D45001D41DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.7;
-			};
-			name = Debug;
-		};
-		1437EAAE17089D45001D41DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.7;
-			};
-			name = Release;
-		};
 		1DEB91AE08733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
-				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/gd-current/include";
 				INFOPLIST_FILE = resources/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_3)",
-				);
-				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/lib\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/lib\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/lib\"";
+				LIBRARY_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/gd-current/lib";
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = GDFramework;
 				SDKROOT = macosx10.7;
@@ -570,21 +583,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
-				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/gd-current/include";
 				INFOPLIST_FILE = resources/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_3)",
-				);
-				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/lib\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/lib\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/lib\"";
+				LIBRARY_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/gd-current/lib";
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = GDFramework;
 				SDKROOT = macosx10.7;
@@ -675,6 +679,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		140CAB77170997E80049A865 /* Build configuration list for PBXAggregateTarget "libgd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				140CAB78170997E80049A865 /* Debug */,
+				140CAB79170997E80049A865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1437EA9517089A11001D41DF /* Build configuration list for PBXAggregateTarget "libjpeg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -682,6 +695,7 @@
 				1437EA9717089A11001D41DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1437EAA317089BA7001D41DF /* Build configuration list for PBXAggregateTarget "libpng" */ = {
 			isa = XCConfigurationList;
@@ -690,6 +704,7 @@
 				1437EAA517089BA7001D41DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1437EAA817089C84001D41DF /* Build configuration list for PBXAggregateTarget "freetype" */ = {
 			isa = XCConfigurationList;
@@ -698,14 +713,7 @@
 				1437EAAA17089C84001D41DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		1437EAAC17089D45001D41DF /* Build configuration list for PBXAggregateTarget "Build Support Libraries" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1437EAAD17089D45001D41DF /* Debug */,
-				1437EAAE17089D45001D41DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "GDFramework" */ = {
 			isa = XCConfigurationList;

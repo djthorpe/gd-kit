@@ -38,9 +38,30 @@ fi
 
 ##############################################################
 
-FLAGS_FREETYPE="--with-freetype=/tmp/freetype-current"
-FLAGS_LIBJPEG="--with-jpeg=/tmp/libjpeg-current"
-FLAGS_LIBPNG="--with-png=/tmp/libpng-current"
+FLAGS_FREETYPE="/tmp/freetype-current"
+FLAGS_LIBJPEG="/tmp/libjpeg-current"
+FLAGS_LIBPNG="/tmp/libpng-current"
+
+if [ -d ${FLAGS_FREETYPE} ]
+then
+	FLAGS_FREETYPE="--with-freetype=${FLAGS_FREETYPE}"
+else
+	FLAGS_FREETYPE=""
+fi
+
+if [ -d ${FLAGS_LIBJPEG} ]
+then
+	FLAGS_LIBJPEG="--with-jpeg=${FLAGS_LIBJPEG}"
+else
+	FLAGS_LIBJPEG=""
+fi
+
+if [ -d ${FLAGS_LIBPNG} ]
+then
+	FLAGS_LIBPNG="--with-png=${FLAGS_LIBPNG}"
+else
+	FLAGS_LIBPNG=""
+fi
 
 ##############################################################
 
@@ -52,7 +73,6 @@ then
   exit 0
 fi
 
-echo "Version = ${VERSION}"
 echo "Unarchiving sources to ${UNARCHIVE}"
 echo "Built gd with be installed at ${PREFIX}"
 
@@ -65,7 +85,7 @@ tar -C ${UNARCHIVE} -zxvf ${TARZ}
 cd "${UNARCHIVE}/gd/${VERSION}"
 export CFLAGS="-arch x86_64"
 export LDFLAGS="-arch x86_64"
-./configure --prefix="${PREFIX}" --enable-shared=yes --enable-static=no \
+./configure --prefix="${PREFIX}" \
 	${FLAGS_FREETYPE} ${FLAGS_LIBJPEG} ${FLAGS_LIBPNG}
 
 # make and install
