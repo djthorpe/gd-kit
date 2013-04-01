@@ -1,34 +1,34 @@
 #!/bin/bash
 
-# Make libpng from source in the tar subdirectory
+# Make gd from source in the tar subdirectory
 # Syntax:
-#   make-libpng.sh ${INPUT_TAR} ${OUTPUT_DIR}
+#   make-gd.sh ${INPUT_TAR} ${OUTPUT_DIR}
 
 CLEAN=0
 CURRENT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 UNARCHIVE=${DERIVED_SOURCES_DIR}
 TARZ=${1}
 BUILD=${2}
-VERSION=`basename ${TARZ} | sed 's/\.tar\.gz//'`
+VERSION=`basename ${TARZ} | sed 's/\.tar\.gz//' | sed 's/gd-//'`
 
 # Check for the TAR file to make sure it exists
 if [ "${TARZ}XX" == "XX" ] || [ ! -e ${TARZ} ]
 then
-	echo "Syntax error: make-libpng.sh {INPUT_TAR_GZ} {OUTPUT_FOLDER}"
+	echo "Syntax error: make-gd.sh {INPUT_TAR_GZ} {OUTPUT_FOLDER}"
 	exit 1
 fi
 
 # Check for the BUILD directory
 if [ "${BUILD}XX" == "XX" ] || [ ! -d ${BUILD} ]
 then
-    echo "Syntax error: make-libpng.sh {INPUT_TAR_GZ} {OUTPUT_FOLDER}"
+    echo "Syntax error: make-gd.sh {INPUT_TAR_GZ} {OUTPUT_FOLDER}"
     exit 1
 fi
 
 # Check for the UNARCHIVE  directories, use TMP if necessary
 if [ "${UNARCHIVE}XX" == "XX" ]
 then
-	UNARCHIVE=${TMPDIR}/${VERSION}/src
+	UNARCHIVE=${TMPDIR}/gd-${VERSION}/src
 fi
 if [ ! -d ${UNARCHIVE} ]
 then
@@ -38,7 +38,13 @@ fi
 
 ##############################################################
 
-PREFIX=${BUILD}/${VERSION}
+FLAGS_FREETYPE="--with-freetype=/tmp/freetype-current"
+FLAGS_LIBJPEG="--with-jpeg=/tmp/libjpeg-current"
+FLAGS_LIBPNG="--with-png=/tmp/libpng-current"
+
+##############################################################
+
+PREFIX=${BUILD}/gd-${VERSION}
 
 if [ -e ${PREFIX} ] && [ ${CLEAN} == 0 ]
 then
@@ -46,8 +52,9 @@ then
   exit 0
 fi
 
+echo "Version = ${VERSION}"
 echo "Unarchiving sources to ${UNARCHIVE}"
-echo "Built libpng with be installed at ${PREFIX}"
+echo "Built gd with be installed at ${PREFIX}"
 
 # remove existing build directory, unarchive
 rm -fr "${UNARCHIVE}"
@@ -55,17 +62,18 @@ mkdir "${UNARCHIVE}"
 tar -C ${UNARCHIVE} -zxvf ${TARZ}
 
 # configure - for 10.6, we only support 64-bit architecture
-cd "${UNARCHIVE}/${VERSION}"
+cd "${UNARCHIVE}/gd/${VERSION}"
 export CFLAGS="-arch x86_64"
 export LDFLAGS="-arch x86_64"
-./configure --prefix="${PREFIX}"
+./configure --prefix="${PREFIX}" --enable-shared=yes --enable-static=no \
+	${FLAGS_FREETYPE} ${FLAGS_LIBJPEG} ${FLAGS_LIBPNG}
 
 # make and install
 make
 make install
 
 # make symbolic link
-rm -f ${BUILD}/libpng-current
-ln -s ${PREFIX} ${BUILD}/libpng-current
+rm -f ${BUILD}/gd-current
+ln -s ${PREFIX} ${BUILD}/gd-current
+echo "Build in ${BUILD}/gd-current"
 exit 0
-
