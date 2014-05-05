@@ -61,6 +61,12 @@
 		1437EABB1708A20D001D41DF /* GDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE31E010C5369EF00E5F6AE /* GDColor.m */; };
 		14429ED70C50B99F00D6C3B5 /* GDFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 14429ED60C50B99F00D6C3B5 /* GDFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14429EFE0C50BA5C00D6C3B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
+		14BCB56C1917796300C3423A /* GDFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE322110C53A2BC00E5F6AE /* GDFont.m */; };
+		14BCB56D1917796700C3423A /* GDImage+Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE31F240C53837400E5F6AE /* GDImage+Cocoa.m */; };
+		14BCB56E1917797400C3423A /* GDTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E582A930C5223B600BACB3C /* GDTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14BCB56F1917797900C3423A /* GDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE31E000C5369EF00E5F6AE /* GDColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14BCB5701917797E00C3423A /* GDFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE322100C53A2BC00E5F6AE /* GDFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14BCB5711917798300C3423A /* GDImage+Cocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE31F230C53837400E5F6AE /* GDImage+Cocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E7E92790F68432B008469A9 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E92780F68432B008469A9 /* AppKit.framework */; };
 		6E7E929F0F6843FC008469A9 /* GDFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* GDFramework.framework */; };
 		6E7E92A10F68440C008469A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14429ED00C50B95300D6C3B5 /* main.m */; };
@@ -264,7 +270,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14BCB5701917797E00C3423A /* GDFont.h in Headers */,
+				14BCB5711917798300C3423A /* GDImage+Cocoa.h in Headers */,
+				14BCB56F1917797900C3423A /* GDColor.h in Headers */,
 				14429ED70C50B99F00D6C3B5 /* GDFramework.h in Headers */,
+				14BCB56E1917797400C3423A /* GDTypes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +325,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "GDFramework" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -438,8 +448,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14BCB56D1917796700C3423A /* GDImage+Cocoa.m in Sources */,
 				1437EABB1708A20D001D41DF /* GDColor.m in Sources */,
 				140CAB86170999FA0049A865 /* GDImage.m in Sources */,
+				14BCB56C1917796300C3423A /* GDFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,87 +489,64 @@
 		140CAB78170997E80049A865 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				PRODUCT_NAME = "libjpeg copy";
-				SDKROOT = macosx10.7;
+				PRODUCT_NAME = libgd;
 			};
 			name = Debug;
 		};
 		140CAB79170997E80049A865 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				PRODUCT_NAME = "libjpeg copy";
-				SDKROOT = macosx10.7;
+				PRODUCT_NAME = libgd;
 			};
 			name = Release;
 		};
 		1437EA9617089A11001D41DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
 		1437EA9717089A11001D41DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
 		1437EAA417089BA7001D41DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				PRODUCT_NAME = "libjpeg copy";
-				SDKROOT = macosx10.7;
+				PRODUCT_NAME = libpng;
 			};
 			name = Debug;
 		};
 		1437EAA517089BA7001D41DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				PRODUCT_NAME = "libjpeg copy";
-				SDKROOT = macosx10.7;
+				PRODUCT_NAME = libpng;
 			};
 			name = Release;
 		};
 		1437EAA917089C84001D41DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				PRODUCT_NAME = "libpng copy";
-				SDKROOT = macosx10.7;
+				PRODUCT_NAME = freetype;
 			};
 			name = Debug;
 		};
 		1437EAAA17089C84001D41DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				PRODUCT_NAME = "libpng copy";
-				SDKROOT = macosx10.7;
+				PRODUCT_NAME = freetype;
 			};
 			name = Release;
 		};
 		1DEB91AE08733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -568,9 +557,11 @@
 				INFOPLIST_FILE = resources/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/gd-current/lib";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lgd";
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = GDFramework;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -578,7 +569,6 @@
 		1DEB91AF08733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -589,9 +579,10 @@
 				INFOPLIST_FILE = resources/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/gd-current/lib";
+				OTHER_LDFLAGS = "-lgd";
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = GDFramework;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -599,34 +590,12 @@
 		1DEB91B208733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_MASTER_OBJECT_FILE = YES;
-				HEADER_SEARCH_PATHS = include;
-				OTHER_LDFLAGS = "-single_module";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Debug;
 		};
 		1DEB91B308733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_MASTER_OBJECT_FILE = YES;
-				HEADER_SEARCH_PATHS = include;
-				OTHER_LDFLAGS = "-single_module";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Release;
 		};
@@ -634,7 +603,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
@@ -649,7 +617,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = GDFrameworkTest;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -657,7 +625,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
@@ -671,7 +638,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = GDFrameworkTest;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
 			name = Release;
